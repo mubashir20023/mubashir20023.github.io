@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mubbashir Ahmed: Machine Learning Researcher</title>
+<meta name="description" content="Mubbashir Ahmed is a machine-learning researcher and engineer in Karachi working across computer vision, reinforcement learning and medical imaging, testing models on the messy, real-world data most benchmarks leave out. Author of GreenMind." />
+<link rel="canonical" href="https://mubashir20023.github.io/" />
+<meta name="author" content="Mubbashir Ahmed" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Mubbashir Ahmed: Machine Learning Researcher" />
+<meta property="og:description" content="Research across computer vision, reinforcement learning and medical imaging. Author of GreenMind." />
+<meta property="og:url" content="https://mubashir20023.github.io/" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"Person",
+  "name":"Mubbashir Ahmed","givenName":"Mubbashir","familyName":"Ahmed",
+  "jobTitle":"Machine Learning Researcher",
+  "email":"mailto:ahmedmubbashir199@gmail.com",
+  "url":"https://mubashir20023.github.io/",
+  "address":{"@type":"PostalAddress","addressLocality":"Karachi","addressCountry":"Pakistan"},
+  "alumniOf":{"@type":"CollegeOrUniversity","name":"Federal Urdu University of Arts, Sciences & Technology"},
+  "worksFor":{"@type":"Organization","name":"Generation's School"},
+  "knowsAbout":["Computer Vision","Machine Learning","Deep Learning","Reinforcement Learning","Medical Image Analysis","Explainable AI"],
+  "sameAs":["https://orcid.org/0009-0003-7737-7754","https://github.com/mubashir20023","https://www.linkedin.com/in/mubbashir-ahmed-1869971b2","https://doi.org/10.5281/zenodo.23905344"]
+}
+</script>
+
+<style>
+:root{
+  --ink:#141126; --ink-2:#1a1631; --card:#201b3b; --card-2:#241e44;
+  --text:#efecf8; --muted:#a49ec4; --faint:#726c92;
+  --gold:#eab54e; --gold-soft:#f0c877; --teal:#6fdcc6; --rose:#e488a0;
+  --line:#2e2852; --line-2:#3a3466;
+  --sans:'Inter',system-ui,sans-serif;
+  --serif:'Fraunces',Georgia,serif;
+  --maxw:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--ink); color:var(--text); font-family:var(--sans);
+  line-height:1.65; -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+body::before{ /* ambient light, fixed */
+  content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
+  background:
+    radial-gradient(1100px 620px at 78% -8%, rgba(234,181,78,.14), transparent 60%),
+    radial-gradient(900px 560px at -8% 8%, rgba(111,220,198,.10), transparent 55%),
+    radial-gradient(700px 700px at 60% 110%, rgba(228,136,160,.07), transparent 60%);
+}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px; position:relative; z-index:1}
+a{color:inherit; text-decoration:none}
+::selection{background:rgba(234,181,78,.3)}
+
+/* ---------- nav ---------- */
+header.nav{position:sticky; top:0; z-index:40; backdrop-filter:blur(12px);
+  background:linear-gradient(180deg,rgba(20,17,38,.86),rgba(20,17,38,.55)); border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex; align-items:center; justify-content:space-between; height:66px}
+.logo{font-family:var(--serif); font-weight:600; font-size:20px; letter-spacing:.2px}
+.logo b{color:var(--gold); font-weight:600}
+.nav-links a{color:var(--muted); font-size:14.5px; font-weight:500; margin-left:26px; transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+@media(max-width:640px){ .nav-links a{margin-left:16px; font-size:13.5px} .nav-links a.sm-hide{display:none} }
+
+/* ---------- hero ---------- */
+.hero{display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center;
+  padding:86px 0 70px; min-height:min(88vh,760px)}
+@media(max-width:860px){ .hero{grid-template-columns:1fr; gap:36px; padding:54px 0 48px} }
+.kicker{color:var(--teal); font-weight:600; font-size:15px; margin:0 0 18px; opacity:0}
+.hero h1{font-family:var(--serif); font-weight:600; font-size:clamp(52px,9vw,104px);
+  line-height:.96; letter-spacing:-.015em; margin:0}
+.hero h1 .l{display:inline-block; opacity:0; transform:translateY(22px)}
+.hero .said{font-size:clamp(19px,2.4vw,24px); color:var(--text); margin:22px 0 0; max-width:30ch;
+  font-weight:500; opacity:0}
+.hero .said em{font-family:var(--serif); font-style:italic; color:var(--gold-soft); font-weight:500}
+.hero .blurb{color:var(--muted); max-width:46ch; margin:20px 0 30px; font-size:16.5px; opacity:0}
+.cta{display:flex; flex-wrap:wrap; gap:12px; opacity:0}
+.btn{display:inline-flex; align-items:center; gap:9px; padding:12px 20px; border-radius:40px;
+  font-weight:600; font-size:15px; border:1px solid var(--line-2); transition:.22s ease; color:var(--text)}
+.btn:hover{transform:translateY(-2px); border-color:var(--gold)}
+.btn.solid{background:var(--gold); color:#2a1d05; border-color:transparent}
+.btn.solid:hover{background:var(--gold-soft); box-shadow:0 10px 30px -10px rgba(234,181,78,.6)}
+.btn .dot{width:7px;height:7px;border-radius:50%;background:var(--teal)}
+
+/* reveal states applied by JS */
+.hero.in .kicker, .hero.in .said, .hero.in .blurb, .hero.in .cta{opacity:1; transition:opacity .7s ease}
+.hero.in .said{transition-delay:.55s} .hero.in .blurb{transition-delay:.68s} .hero.in .cta{transition-delay:.8s}
+.hero.in .kicker{transition-delay:.15s}
+.hero.in h1 .l{opacity:1; transform:none; transition:opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1)}
+
+/* ---------- hero instrument (the signal curve) ---------- */
+.panel{position:relative; background:linear-gradient(165deg,var(--card),var(--ink-2));
+  border:1px solid var(--line); border-radius:22px; padding:22px 22px 18px;
+  box-shadow:0 40px 80px -40px rgba(0,0,0,.7)}
+.panel .cap{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px}
+.panel .cap b{font-family:var(--serif); font-size:15px; font-weight:600; color:var(--text)}
+.panel .cap span{font-size:12.5px; color:var(--faint)}
+.plot{width:100%; height:auto; display:block}
+.plot .grid{stroke:var(--line); stroke-width:1}
+.plot .axis{fill:var(--faint); font:500 10px var(--sans)}
+.plot .curve{fill:none; stroke:url(#sig); stroke-width:3; stroke-linecap:round; stroke-linejoin:round;
+  stroke-dasharray:1; stroke-dashoffset:1}
+.plot.draw .curve{animation:draw 2.1s .5s cubic-bezier(.65,0,.35,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.plot .pt{fill:var(--ink); stroke-width:2.5; opacity:0}
+.plot.draw .pt{animation:pop .4s forwards}
+.plot.draw .pt.p1{animation-delay:1.0s} .plot.draw .pt.p2{animation-delay:1.7s} .plot.draw .pt.p3{animation-delay:2.4s}
+@keyframes pop{to{opacity:1}}
+.plot .note{fill:var(--muted); font:600 11px var(--sans); opacity:0}
+.plot.draw .note{animation:pop .5s forwards}
+.plot.draw .note.n1{animation-delay:1.15s} .plot.draw .note.n2{animation-delay:1.85s} .plot.draw .note.n3{animation-delay:2.55s}
+.panel .legend{margin-top:10px; color:var(--muted); font-size:13px; line-height:1.5}
+.panel .legend b{color:var(--gold-soft); font-weight:600; font-family:var(--serif)}
+
+/* ---------- stats under hero ---------- */
+.stats{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line);
+  border:1px solid var(--line); border-radius:18px; overflow:hidden; margin:-28px 0 0}
+@media(max-width:860px){ .stats{margin-top:8px} }
+.stat{background:var(--ink-2); padding:20px 22px}
+.stat .n{font-family:var(--serif); font-size:34px; font-weight:600; line-height:1; color:var(--gold)}
+.stat .n small{font-size:20px; color:var(--gold-soft)}
+.stat .t{color:var(--muted); font-size:13.5px; margin-top:7px}
+
+/* ---------- section scaffold ---------- */
+section{padding:64px 0; position:relative; z-index:1}
+.shead{display:flex; align-items:baseline; gap:16px; margin-bottom:34px}
+.shead .num{font-family:var(--serif); font-size:15px; color:var(--teal); font-variant-numeric:tabular-nums}
+.shead h2{font-family:var(--serif); font-weight:600; font-size:clamp(26px,4vw,38px); margin:0; letter-spacing:-.01em}
+.rule{height:1px; background:linear-gradient(90deg,var(--line-2),transparent); flex:1; align-self:center; margin-left:6px}
+
+/* ---------- story ---------- */
+.story{max-width:62ch}
+.story p{font-size:clamp(17px,2.1vw,19px); color:#d7d2ea; margin:0 0 20px}
+.story p:first-of-type{font-family:var(--serif); font-size:clamp(20px,2.6vw,25px); line-height:1.45; color:var(--text)}
+.story p b{color:var(--gold-soft); font-weight:600}
+.sign{margin-top:26px; font-family:var(--serif); font-size:20px; color:var(--text)}
+.sign span{color:var(--faint); font-family:var(--sans); font-size:14px; display:block; margin-top:2px}
+
+/* ---------- research ---------- */
+.feature{border:1px solid var(--line-2); border-radius:22px; overflow:hidden;
+  background:linear-gradient(160deg,var(--card-2),var(--ink-2)); margin-bottom:22px}
+.feature .inner{padding:30px}
+.feature .flag{display:inline-flex; align-items:center; gap:8px; font-size:12.5px; font-weight:600;
+  color:#2a1d05; background:var(--gold); padding:5px 12px; border-radius:30px}
+.feature h3{font-family:var(--serif); font-weight:600; font-size:clamp(22px,3vw,28px); margin:16px 0 6px; line-height:1.15}
+.feature .meta{color:var(--faint); font-size:14px; margin:0 0 14px; font-variant-numeric:tabular-nums}
+.feature p{color:#cfc9e6; margin:0 0 18px; max-width:68ch}
+.flinks{display:flex; flex-wrap:wrap; gap:10px}
+.chip-l{font-weight:600; font-size:14px; color:var(--teal); border:1px solid var(--line-2); padding:8px 15px; border-radius:30px; transition:.2s}
+.chip-l:hover{border-color:var(--teal); background:rgba(111,220,198,.08)}
+
+.grid2{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+@media(max-width:760px){ .grid2{grid-template-columns:1fr} }
+.rcard{border:1px solid var(--line); border-radius:18px; padding:24px; background:var(--card);
+  position:relative; transition:transform .25s ease, border-color .25s ease}
+.rcard:hover{transform:translateY(-4px); border-color:var(--line-2)}
+.rcard .dom{font-size:13px; font-weight:600; color:var(--teal); letter-spacing:.02em}
+.rcard h3{font-family:var(--serif); font-weight:600; font-size:20px; margin:10px 0 4px; line-height:1.2}
+.rcard .with{color:var(--faint); font-size:13.5px; margin:0 0 12px}
+.rcard p{color:#c6c0de; font-size:14.5px; margin:0}
+
+/* ---------- timeline ---------- */
+.tl{position:relative; margin-left:6px; padding-left:28px}
+.tl::before{content:""; position:absolute; left:0; top:6px; bottom:6px; width:2px;
+  background:linear-gradient(180deg,var(--gold),var(--teal),transparent)}
+.job{position:relative; padding:0 0 30px}
+.job:last-child{padding-bottom:0}
+.job::before{content:""; position:absolute; left:-33px; top:5px; width:11px; height:11px; border-radius:50%;
+  background:var(--ink); border:2.5px solid var(--gold)}
+.job .when{font-size:13px; color:var(--faint); font-variant-numeric:tabular-nums; letter-spacing:.02em}
+.job h4{font-family:var(--serif); font-weight:600; font-size:19px; margin:3px 0 1px}
+.job .org{color:var(--gold-soft); font-weight:600; font-size:15px}
+.job p{color:var(--muted); font-size:14.5px; margin:8px 0 0; max-width:66ch}
+
+/* ---------- skills ---------- */
+.sk{display:grid; grid-template-columns:1fr 1fr; gap:26px 40px}
+@media(max-width:640px){ .sk{grid-template-columns:1fr; gap:22px} }
+.sk h4{font-family:var(--serif); font-weight:600; font-size:16px; margin:0 0 12px; color:var(--text)}
+.tags{display:flex; flex-wrap:wrap; gap:8px}
+.tag{font-size:13px; color:#d6d0ee; border:1px solid var(--line-2); padding:6px 13px; border-radius:30px;
+  background:rgba(255,255,255,.015)}
+
+/* ---------- contact ---------- */
+.contact{border:1px solid var(--line-2); border-radius:24px; padding:40px;
+  background:radial-gradient(120% 140% at 0% 0%, rgba(234,181,78,.1), transparent 55%), var(--ink-2)}
+.contact h2{font-family:var(--serif); font-weight:600; font-size:clamp(28px,4.4vw,42px); margin:0 0 10px; letter-spacing:-.01em}
+.contact p{color:var(--muted); max-width:52ch; margin:0 0 24px; font-size:16.5px}
+
+footer{border-top:1px solid var(--line); padding:30px 0 56px; color:var(--faint); font-size:14px}
+footer .wrap{display:flex; flex-wrap:wrap; justify-content:space-between; gap:14px}
+footer a{color:var(--muted)} footer a:hover{color:var(--text)}
+
+/* reveal-on-scroll (subtle, applied to a few blocks only) */
+.rise{opacity:0; transform:translateY(20px)}
+.rise.vis{opacity:1; transform:none; transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1)}
+
+@media(prefers-reduced-motion:reduce){
+  *{animation:none !important; transition:none !important}
+  .hero .kicker,.hero .said,.hero .blurb,.hero .cta,.hero h1 .l,.plot .pt,.plot .note,.rise{opacity:1 !important; transform:none !important}
+  .plot .curve{stroke-dashoffset:0 !important}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">Mubbashir<b>.</b>Ahmed</a>
+    <nav class="nav-links">
+      <a href="#story" class="sm-hide">Story</a>
+      <a href="#research">Research</a>
+      <a href="#path" class="sm-hide">Path</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hcopy">
+      <p class="kicker">Machine-learning researcher &amp; engineer, Karachi</p>
+      <h1 aria-label="Mubbashir Ahmed"><span class="l">Mubbashir</span><br><span class="l">Ahmed</span></h1>
+      <p class="said">I build machine-learning systems, and I don't trust one until I've tried to <em>break</em> it on real-world data.</p>
+      <p class="blurb">I work across computer vision, reinforcement learning and medical imaging. The question that connects all of it is simple: does a model still work once the data stops being clean?</p>
+      <div class="cta">
+        <a class="btn solid" href="https://doi.org/10.5281/zenodo.23905344">Read my paper</a>
+        <a class="btn" href="#path"><span class="dot"></span> My path</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hvis">
+      <div class="panel">
+        <div class="cap"><b>The lab-to-field gap</b><span>from my research</span></div>
+        <svg class="plot" viewBox="0 0 360 200" role="img" aria-label="A curve showing accuracy high in the lab, dropping on real field data, then partly recovering after my fixes.">
+          <defs>
+            <linearGradient id="sig" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#6fdcc6"/><stop offset=".55" stop-color="#e488a0"/><stop offset="1" stop-color="#eab54e"/>
+            </linearGradient>
+          </defs>
+          <line class="grid" x1="34" y1="20" x2="34" y2="170"/>
+          <line class="grid" x1="34" y1="170" x2="348" y2="170"/>
+          <text class="axis" x="6" y="38">100</text>
+          <text class="axis" x="12" y="130">30</text>
+          <path class="curve" d="M40,34 C80,34 95,36 120,40 C150,45 160,150 196,152 C228,154 236,118 268,108 C300,98 322,96 344,96"/>
+          <circle class="pt p1" cx="120" cy="40" r="5" stroke="#6fdcc6"/>
+          <circle class="pt p2" cx="196" cy="152" r="5" stroke="#e488a0"/>
+          <circle class="pt p3" cx="344" cy="96" r="5" stroke="#eab54e"/>
+          <text class="note n1" x="86" y="30">lab 99%</text>
+          <text class="note n2" x="150" y="172">field 29%</text>
+          <text class="note n3" x="270" y="88">+ fixes 52%</text>
+        </svg>
+        <p class="legend">Models that look <b>perfect</b> in the lab often fall apart on real photos. I measure that gap honestly, then work to close it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats rise" aria-label="At a glance">
+    <div class="stat"><div class="n" data-count="4" data-suffix="+">0</div><div class="t">years building data &amp; ML systems</div></div>
+    <div class="stat"><div class="n" data-count="3">0</div><div class="t">research fields: vision, RL, medical</div></div>
+    <div class="stat"><div class="n" data-count="1">0</div><div class="t">published paper, with open code &amp; data</div></div>
+  </div>
+
+  <!-- STORY -->
+  <section id="story">
+    <div class="shead"><span class="num">01</span><h2>How I got here</h2><span class="rule"></span></div>
+    <div class="story rise">
+      <p>I didn't get into research in a straight line. I got here through the data most people would rather not deal with.</p>
+      <p>My first few years were on the practical side of machine learning: the pipelines, models and dashboards that humanitarian programmes at <b>UNICEF, UNEP and CCAC</b> actually relied on. That work left me with a habit I still keep. <b>I don't trust a number until I've tried to break it.</b></p>
+      <p>Over time that habit turned into research. I did it alongside a full-time job, without a lab or funding, and taught myself three areas that don't usually overlap: <b>computer vision, reinforcement learning and medical imaging</b>. I ask the same thing of all of them. Does the model hold up once the data gets messy?</p>
+      <p>GreenMind, my first published paper, is where that question gets specific: a plant-disease model that scores 99% in the lab but only 29% in the field, and the slow work of closing that gap. I'm not attached to an institution. I just think research should be reproducible, measured honestly, and open for anyone to check. This is where I keep that work.</p>
+      <p class="sign">Mubbashir Ahmed<span>Independent researcher, Karachi, Pakistan</span></p>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="shead"><span class="num">02</span><h2>Research &amp; publications</h2><span class="rule"></span></div>
+
+    <div class="feature rise">
+      <div class="inner">
+        <span class="flag">● Published, open access</span>
+        <h3>GreenMind: explainable plant identification &amp; disease screening</h3>
+        <p class="meta">Preprint on Zenodo, 2026. DOI 10.5281/zenodo.23905344</p>
+        <p>An open system that identifies plant species and checks leaves for disease from a single photo, explains each prediction with class-activation maps, and reports something most papers skip: how well it does on photos it has <em>never</em> seen. Using a temporal split of iNaturalist data and a lab-to-field test for leaf disease, it shows a 70-point drop from lab to field, and four practical ways to narrow it. All the code, data splits and per-image predictions are public.</p>
+        <div class="flinks">
+          <a class="chip-l" href="https://doi.org/10.5281/zenodo.23905344">Paper (DOI)</a>
+          <a class="chip-l" href="https://github.com/mubashir20023/greenmind-ai">Code on GitHub</a>
+          <a class="chip-l" href="https://greenmind-ai.onrender.com">Live demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="rcard rise">
+        <div class="dom">Reinforcement learning</div>
+        <h3>QRC with expected eligibility traces</h3>
+        <p class="with">with Prof. Peter Vamplew, Federation University Australia</p>
+        <p>Extending QRC(λ) streaming deep RL with expected eligibility traces; multi-seed, 5M-step runs across five MinAtar environments on the Swinburne supercomputer, in JAX.</p>
+      </div>
+      <div class="rcard rise">
+        <div class="dom">Medical imaging</div>
+        <h3>PI-CAI prostate lesion segmentation</h3>
+        <p class="with">with Prof. Reyer Zwiggelaar, Aberystwyth University, UK</p>
+        <p>Benchmarking ITUNet, SwinUNETR, U-Mamba and nnU-Net under the PI-CAI protocol, with five-fold experiments and standardized held-out evaluation (AUROC / AP).</p>
+      </div>
+      <div class="rcard rise">
+        <div class="dom">Computer vision</div>
+        <h3>Scoring children's hand-drawn shapes</h3>
+        <p class="with">with Prof. Nam, ICT Research Centre / UC Lab</p>
+        <p>Ordinal scoring (0 to 6) of BOT-2 shapes with ViT-S/16 and MobileViT-S, linear probing and DiffuseMix / CutMix / MixUp, evaluated with Quadratic Weighted Kappa under heavy class imbalance.</p>
+      </div>
+      <div class="rcard rise">
+        <div class="dom">Systems &amp; products</div>
+        <h3>Things I've shipped</h3>
+        <p class="with">independent &amp; freelance</p>
+        <p>The ingo.work UN-jobs crawler, the Aurelle Bride couture storefront, and SEO-driven sites. Research instincts, applied to products people actually use.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATH -->
+  <section id="path">
+    <div class="shead"><span class="num">03</span><h2>The path so far</h2><span class="rule"></span></div>
+    <div class="tl">
+      <div class="job rise">
+        <div class="when">Jan 2026 to Present</div>
+        <h4>Senior Officer, Education Quality Management</h4>
+        <div class="org">Generation's School, Karachi</div>
+        <p>Data pipelines, Python analytics and Power BI / Looker Studio reporting for student, teacher and leadership insight; role-based evaluation and 360° feedback systems.</p>
+      </div>
+      <div class="job rise">
+        <div class="when">Jun 2023 to Jun 2026</div>
+        <h4>Data Engineer</h4>
+        <div class="org">Rylox Ltd, Milton Keynes, UK</div>
+        <p>ETL pipelines, SQL data models and validation frameworks; Power BI and GIS dashboards for UNICEF, UNEP and CCAC programmes; built the ingo.work job-intelligence platform.</p>
+      </div>
+      <div class="job rise">
+        <div class="when">Feb 2025 to Aug 2025</div>
+        <h4>Web Developer &amp; SEO / Media Strategist</h4>
+        <div class="org">Ghazi Motors Ltd, Karachi</div>
+        <p>Full-stack development, PHP/MySQL systems and schema-driven SEO that put the brand in front of search.</p>
+      </div>
+      <div class="job rise">
+        <div class="when">Dec 2024 to Jan 2025</div>
+        <h4>Data Analyst (Contract)</h4>
+        <div class="org">Aga Khan University, Karachi</div>
+        <p>Power Query / SQL data preparation, DAX measures and Power BI dashboards for management review.</p>
+      </div>
+      <div class="job rise">
+        <div class="when">Apr 2021 to Jul 2025</div>
+        <h4>B.S. in Computer Science</h4>
+        <div class="org">Federal Urdu University of Arts, Sciences &amp; Technology</div>
+        <p>GPA 3.23 / 4.0. Final-year project: GreenMind-AI, the seed of the research I publish today.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="shead"><span class="num">04</span><h2>What I work with</h2><span class="rule"></span></div>
+    <div class="sk">
+      <div><h4>Research &amp; deep learning</h4><div class="tags">
+        <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">JAX</span><span class="tag">timm</span>
+        <span class="tag">YOLOv8</span><span class="tag">Vision Transformers</span><span class="tag">U-Mamba / nnU-Net</span>
+        <span class="tag">Grad-CAM</span><span class="tag">Calibration</span><span class="tag">Deep RL, QRC</span>
+      </div></div>
+      <div><h4>Languages</h4><div class="tags">
+        <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C++</span><span class="tag">SQL</span><span class="tag">PHP</span><span class="tag">JavaScript</span>
+      </div></div>
+      <div><h4>Data &amp; MLOps</h4><div class="tags">
+        <span class="tag">ETL &amp; pipelines</span><span class="tag">PostgreSQL, MySQL</span><span class="tag">Docker</span>
+        <span class="tag">FastAPI</span><span class="tag">GitHub Actions</span><span class="tag">HPC / SLURM</span>
+      </div></div>
+      <div><h4>Analytics &amp; delivery</h4><div class="tags">
+        <span class="tag">Power BI</span><span class="tag">Looker Studio</span><span class="tag">GIS / ArcGIS</span><span class="tag">Flask, React</span>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact rise">
+      <h2>Let's build something measured.</h2>
+      <p>I'm open to research collaboration and machine-learning roles. If something here lines up with what you're working on, I'd be glad to hear from you. Email is the best way to reach me.</p>
+      <div class="cta" style="opacity:1">
+        <a class="btn solid" href="mailto:ahmedmubbashir199@gmail.com">ahmedmubbashir199@gmail.com</a>
+        <a class="btn" href="https://github.com/mubashir20023">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/mubbashir-ahmed-1869971b2">LinkedIn</a>
+        <a class="btn" href="https://orcid.org/0009-0003-7737-7754">ORCID</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="y"></span> Mubbashir Ahmed, Karachi, Pakistan</span>
+    <span>Built in the open. <a href="https://doi.org/10.5281/zenodo.23905344">Read the paper</a></span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+
+/* hero orchestrated load */
+window.addEventListener('load',()=>{
+  document.getElementById('hero').classList.add('in');
+  const plot=document.querySelector('.plot');
+  if(plot){
+    const path=plot.querySelector('.curve'); const len=path.getTotalLength();
+    path.style.strokeDasharray=len; path.style.strokeDashoffset=len;
+    requestAnimationFrame(()=>plot.classList.add('draw'));
+  }
+});
+
+/* count-up stats + scroll reveals */
+const io=new IntersectionObserver((es)=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting) return;
+    e.target.classList.add('vis');
+    e.target.querySelectorAll?.('[data-count]').forEach(el=>{
+      const end=+el.dataset.count, suf=el.dataset.suffix||''; let t0=null;
+      const step=(t)=>{ t0=t0||t; const p=Math.min((t-t0)/900,1);
+        el.textContent=Math.round(p*end)+ (p===1?suf:''); if(p<1)requestAnimationFrame(step); };
+      requestAnimationFrame(step);
+    });
+    io.unobserve(e.target);
+  });
+},{threshold:.2});
+document.querySelectorAll('.rise').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
